@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form name="sugnup" onsubmit="alert('Enviado');" autocomplete="off" target="_blank" method="post" action="#">
+        Nome: <input type="text" name="name" /><br>
+        Idade: <input type="number" name="age" /><br>
+        Senha: <input type="password" name="password" /><br>
+        <button type="submit">Enviar</button> 
+    </form>
+    <br>
+    <form>
+        <label>Text: </label><input type="text" /><br>
+        <label>Number: </label><input type="number" min="0" max="10" step="2" /><br>
+        <label>Range: </label><input type="range" /><br>
+        <label>Color: </label><input type="color" /><br>
+        <label>E-mail: </label><input type="email" /><br>
+        <label>Url: </label><input type="url" /><br>
+        <label>Date: </label><input type="date" /><br>
+        <label>Week: </label><input type="week" /><br>
+        <label>Month: </label><input type="month" /><br>
+        <label>Chackbox: </label><input type="checkbox" /><input type="checkbox" /><br>
+        <label>Radio: </label><input type="radio" name="aceita" /><input type="radio" name="aceita" /><br>
+        <label>File: </label><input type="file" /><br>
+        <label>Search: </label><input type="search" /><br>
+        <label>Button: </label><input type="button" value="Enviar" /><button type="reset">Limpar</button><br>
+    </form>
+    <br>
+    <form onsubmit="" method="get">
+        <h3>Pizza de Calabresa</h3>
+        <p>O que você deseja?</p>
+        <input type="checkbox" disabled name="opcional[]" value="queijo"> + Queijo <br>
+        <input type="checkbox" name="opcional[]" value="queijo"> + Calabresa <br>
+        <input type="checkbox" name="opcional[]" value="queijo"> + Cebola <br>
+        <input type="checkbox" name="opcional[]" value="queijo"> + Azeitona <br>
+        <p>Borda recheada</p>
+        <input type="radio" name="border" value="sim"> Sim <br>
+        <input type="radio" name="border" value="não"> Não <br>
+        <p>Bebida</p>
+        <input type="radio" name="bebida" value="suco"> + Suco <br>
+        <input type="radio" name="bebida" value="refri"> + Refrigerante <br>
+        <input type="radio" name="bebida" value="agua"> + Água <br>
+        <input type="radio" name="bebida" value="nada"> + Nada <br>
+
+        <button type="submit">Enviar pedido</button>
+    </form>
+    <br>
+    <form method="get">
+        <label>Nome: </label><input type="text" name="name"><br>
+        <label>Idade: </label><input type="number" name="number"><br>
+        <label>Password: </label><input type="password" name="password"><br>
+
+        <button type="button" onmouseover="alert('Passei aqui')" >Passe aqui</button>
+        <button type="button" onclick="alert('Cliquei aqui')" >Clicavel</button>
+    </form>
+    <br>
+    <form onsubmit="" method="get">
+        <label>Nome: </label><input type="text" name="name"><br>
+        <label>Cargo: </label><select name="role">
+            <option value="">Selecione o cargo</option>
+            <option value="auxiliar">Aux. Adm.</option>
+            <option value="assistente">Ass. Adm.</option>
+        </select><br>
+        <label>Assunto: </label><input type="text" name="subject"><br>
+        <label>Mensagem: </label>
+        <textarea name="message"></textarea>
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
