@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro</title>
+    <Style>
+        .row {
+            margin: 5px;
+        }
+
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+    </Style>
 </head>
+
 <body>
-    <form name="sugnup" onsubmit="alert('Enviado');" autocomplete="off" target="_blank" method="post" action="#">
-        Nome: <input type="text" name="name" /><br>
-        Idade: <input type="number" name="age" /><br>
-        Senha: <input type="password" name="password" /><br>
-        <button type="submit">Enviar</button> 
-    </form>
+    <fieldset>
+        <legend>Dados</legend>
+        <div class="row" name="sugnup" onsubmit="alert('Enviado');" autocomplete="off" target="_blank" method="post"
+            action="#">
+            <label>Nome: </label><input type="text" name="name" /><br>
+            <label>Idade: </label><input type="number" name="age" /><br>
+            <label>Senha: </label><input type="password" name="password" /><br>
+            <label></label><button type="submit">Enviar</button>
+        </div>
+    </fieldset>
     <br>
-    <form>
+    <div class="row">
         <label>Text: </label><input type="text" /><br>
         <label>Number: </label><input type="number" min="0" max="10" step="2" /><br>
         <label>Range: </label><input type="range" /><br>
@@ -28,9 +46,9 @@
         <label>File: </label><input type="file" /><br>
         <label>Search: </label><input type="search" /><br>
         <label>Button: </label><input type="button" value="Enviar" /><button type="reset">Limpar</button><br>
-    </form>
+    </div>
     <br>
-    <form onsubmit="" method="get">
+    <div class="row" onsubmit="" method="get">
         <h3>Pizza de Calabresa</h3>
         <p>O que você deseja?</p>
         <input type="checkbox" disabled name="opcional[]" value="queijo"> + Queijo <br>
@@ -47,18 +65,18 @@
         <input type="radio" name="bebida" value="nada"> + Nada <br>
 
         <button type="submit">Enviar pedido</button>
-    </form>
+    </div>
     <br>
-    <form method="get">
+    <div class="row" method="get">
         <label>Nome: </label><input type="text" name="name"><br>
         <label>Idade: </label><input type="number" name="number"><br>
         <label>Password: </label><input type="password" name="password"><br>
 
-        <button type="button" onmouseover="alert('Passei aqui')" >Passe aqui</button>
-        <button type="button" onclick="alert('Cliquei aqui')" >Clicavel</button>
-    </form>
+        <button type="button" onmouseover="alert('Passei aqui')">Passe aqui</button>
+        <button type="button" onclick="alert('Cliquei aqui')">Clicavel</button>
+    </div>
     <br>
-    <form onsubmit="" method="get">
+    <div class="row" onsubmit="" method="get">
         <label>Nome: </label><input type="text" name="name"><br>
         <label>Cargo: </label><select name="role">
             <option value="">Selecione o cargo</option>
@@ -67,9 +85,10 @@
         </select><br>
         <label>Assunto: </label><input type="text" name="subject"><br>
         <label>Mensagem: </label>
-        <textarea name="message"></textarea>
-        <button type="submit">Enviar</button>
+        <textarea name="message"></textarea><br>
+        <label><button type="submit">Enviar</button></label>
 
-    </form>
+    </div>
 </body>
+
 </html>
